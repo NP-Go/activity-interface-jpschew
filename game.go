@@ -1,5 +1,14 @@
 package main
 
-//Declare Games Struct
+import "fmt"
 
-//Create print method
+//Declare Struct for Game
+type game struct {
+	title string
+	price float64
+}
+
+//Declare method for Game
+func (g game) printPrice() {
+	fmt.Println(g.price)
+}
